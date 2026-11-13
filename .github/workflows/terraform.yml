@@ -18,6 +18,9 @@ env:
   ARM_CLIENT_ID: ${{ vars.AZURE_CLIENT_ID }}
   ARM_TENANT_ID: ${{ vars.AZURE_TENANT_ID }}
   ARM_SUBSCRIPTION_ID: ${{ vars.AZURE_SUBSCRIPTION_ID }}
+  TF_VAR_aws_bucket_name: ${{ vars.ADF_AWS_BUCKET }}
+  TF_VAR_aws_access_key_id: ${{ vars.ADF_AWS_ACCESS_KEY_ID }}
+
 
 jobs:
   terraform:
